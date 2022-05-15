@@ -3,18 +3,20 @@ import Button from "../Button/Button";
 
 const RobotContainer = styled.div`
   text-align: center;
-  color: white;
+  color: black;
   width: 250px;
   height: 470px;
   margin: 15px;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
   display: flex;
   flex-direction: column;
   border-radius: 20px;
-  box-shadow: 1px 5px 15px 3px rgba(0, 0, 0, 0.51);
+  box-shadow: 1px 5px 15px 3px rgba(0, 0, 0, 0.5);
   transition: all 0.4s ease;
+  outline: 2px solid black;
+  outline-offset: 8px;
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.04);
   }
   img {
     width: 250px;
@@ -23,13 +25,14 @@ const RobotContainer = styled.div`
   h2 {
     font-size: 1.5em;
     margin: 10px 10px;
+    color: white;
   }
   p {
-    font-size: 1.25em;
-    margin: 10px 10px;
+    font-size: 1.35em;
+    margin: 8px 8px;
   }
   .robot-name {
-    background-color: grey;
+    background-color: rgba(50, 50, 50, 0.7);
   }
 `;
 

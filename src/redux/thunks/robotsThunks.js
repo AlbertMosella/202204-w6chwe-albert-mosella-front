@@ -1,4 +1,4 @@
-import { loadRobotsActionCreator } from "../robots/robotsSlice";
+import { loadRobotsActionCreator } from "../features/robots/robotsSlice";
 
 export const loadRobotsThunk = () => async (dispatch) => {
   try {
