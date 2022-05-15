@@ -13,7 +13,5 @@ export const loadRobotsThunk = () => async (dispatch) => {
     setTimeout(() => {
       dispatch(setLoadedOnActionCreator());
     }, 3000);
-  } catch (error) {
-    console.log(error);
-  }
+  } catch (error) {}
 };
