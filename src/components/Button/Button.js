@@ -12,6 +12,7 @@ const ButtonContainer = styled.div`
     border: 3px solid black;
     position: relative;
     margin: auto;
+    cursor: pointer;
   }
 
   button::before,

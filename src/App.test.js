@@ -1,16 +1,16 @@
 import { render, screen } from "@testing-library/react";
 import { Provider } from "react-redux";
-import store from "../../redux/store/store";
-import RobotsListPage from "./RobotsListPage";
+import App from "./App";
+import store from "./redux/store/store";
 
-describe("Given a LoadingPage component", () => {
+describe("Given a App component", () => {
   describe("When it's called", () => {
-    test("Then it should render the text 'Amazing Robots'", () => {
-      const expectedText = "Amazing Robots";
+    test("Then it should render the text 'Loading...'", () => {
+      const expectedText = "LOADING...";
 
       render(
         <Provider store={store}>
-          <RobotsListPage />
+          <App />
         </Provider>
       );
       const receivedElement = screen.getByText(expectedText);
